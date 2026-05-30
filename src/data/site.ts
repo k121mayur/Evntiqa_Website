@@ -205,14 +205,14 @@ export const clients = {
   lead: 'Trusted by leading B2B technology brands',
   sub: 'Executive engagement programs delivered for the brands buyers already know.',
   logos: [
-    { name: 'Trend Micro', file: '/logos/trend-micro.svg' },
-    { name: 'Commvault', file: '/logos/commvault.svg' },
-    { name: 'Intel', file: '/logos/intel.svg' },
-    { name: 'ZoomInfo', file: '/logos/zoominfo.svg' },
-    { name: 'Board', file: '/logos/board.svg' },
-    { name: 'F-Secure', file: '/logos/f-secure.svg' },
-    { name: 'Infosys', file: '/logos/infosys.svg' },
-    { name: 'Informatica', file: '/logos/informatica.svg' },
+    { name: 'Trend Micro', file: '/logos/trend-micro.png' },
+    { name: 'Commvault', file: '/logos/commvault.png' },
+    { name: 'Intel', file: '/logos/intel.png' },
+    { name: 'ZoomInfo', file: '/logos/zoominfo.png' },
+    { name: 'Board', file: '/logos/board.png' },
+    { name: 'F-Secure', file: '/logos/f-secure.png' },
+    { name: 'Infosys', file: '/logos/infosys.png' },
+    { name: 'Informatica', file: '/logos/informatica.png' },
   ] satisfies ClientLogo[],
 } as const;
 
