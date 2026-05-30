@@ -58,11 +58,7 @@ export function Preloader() {
     >
       <div className="pl-bg" aria-hidden="true" />
       <div className="pl-inner">
-        <span
-          className="pl-logo font-display font-extrabold text-[26px] text-white tracking-tight"
-        >
-          {site.name}
-        </span>
+        <img className="pl-logo" src="/brand/logo-light.svg" alt={site.name} />
         <div className="pl-bar">
           <span />
         </div>

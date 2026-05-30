@@ -96,17 +96,17 @@ export function Header() {
   );
 }
 
-/** Evntiqa wordmark — switches colour for light vs dark backgrounds. */
+/** Evntiqa wordmark — switches artwork to keep contrast on light vs dark backgrounds.
+ *  Swap files at /public/brand/logo-light.svg and /public/brand/logo-dark.svg. */
 function BrandLogo({ dark }: { dark: boolean }) {
   return (
-    <span
-      className={[
-        'font-display font-extrabold tracking-tight text-[22px] leading-none transition-colors duration-[250ms]',
-        dark ? 'text-ink' : 'text-white',
-      ].join(' ')}
-    >
-      Evntiqa
-    </span>
+    <img
+      src={dark ? '/brand/logo-dark.svg' : '/brand/logo-light.svg'}
+      alt="Evntiqa"
+      className="h-[26px] w-auto block"
+      width={130}
+      height={26}
+    />
   );
 }
 
