@@ -47,15 +47,6 @@ export default {
       transitionTimingFunction: {
         brand: 'cubic-bezier(.22,.61,.36,1)',
       },
-      keyframes: {
-        drift: {
-          from: { transform: 'translateY(-50%) translateX(0)' },
-          to: { transform: 'translateY(-52%) translateX(-26px)' },
-        },
-      },
-      animation: {
-        drift: 'drift 26s ease-in-out infinite alternate',
-      },
     },
   },
   plugins: [],
