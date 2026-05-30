@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================ SEO ============================ -->
+    <title>Evntiqa — ABM-Powered Executive Roundtables for B2B Tech</title>
+    <meta
+      name="description"
+      content="Evntiqa helps B2B technology companies engage target accounts through executive-led roundtables, account-based marketing, and personalized distribution."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a1736" />
+    <link rel="canonical" href="https://evntiqa.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Evntiqa" />
+    <meta property="og:title" content="Evntiqa — ABM-Powered Executive Roundtables for B2B Tech" />
+    <meta
+      property="og:description"
+      content="Evntiqa helps B2B technology companies engage target accounts through executive-led roundtables, account-based marketing, and personalized distribution."
+    />
+    <meta property="og:url" content="https://evntiqa.com/" />
+    <meta property="og:image" content="https://evntiqa.com/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Evntiqa — ABM-Powered Executive Roundtables for B2B Tech" />
+    <meta
+      name="twitter:description"
+      content="Evntiqa helps B2B technology companies engage target accounts through executive-led roundtables, account-based marketing, and personalized distribution."
+    />
+    <meta name="twitter:image" content="https://evntiqa.com/og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts: Hanken Grotesk (body) + Schibsted Grotesk (display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Organization structured data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Evntiqa",
+        "url": "https://evntiqa.com/",
+        "email": "jackie@evntiqa.com",
+        "description": "Evntiqa is a B2B engagement media company focused on helping technology brands build awareness, engagement, and demand within their target accounts through executive-led roundtables, account-based marketing, intent-driven engagement, and personalized distribution.",
+        "sameAs": ["https://www.linkedin.com/company/evntiqa"]
+      }
+    </script>
+
+    <!-- Critical boot styles: navy first paint + spinner so there is no white flash
+         before React mounts (the hero and footer are dark, so navy is the right base). -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #0a1736;
+      }
+      #root {
+        min-height: 100vh;
+      }
+      .boot {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        background: #0a1736;
+        z-index: 9999;
+      }
+      .boot i {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.16);
+        border-top-color: #5076ff;
+        animation: bootspin 0.8s linear infinite;
+      }
+      @keyframes bootspin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- React replaces the contents of #root on mount; the spinner is the pre-hydration fallback. -->
+    <div id="root"><div class="boot"><i></i></div></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
