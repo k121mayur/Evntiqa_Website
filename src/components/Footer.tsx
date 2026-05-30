@@ -1,6 +1,7 @@
 import { footer, site } from '../data/site';
 import { Icon } from './icons';
 import { Container } from './ui';
+import { Wordmark } from './Wordmark';
 
 export function Footer() {
   return (
@@ -10,13 +11,7 @@ export function Footer() {
           {/* Brand block */}
           <div>
             <a href="#top" className="inline-flex items-center mb-4" aria-label={`${site.name} home`}>
-              <img
-                src="/brand/logo-light.svg"
-                alt={site.name}
-                className="h-[30px] w-auto block"
-                width={150}
-                height={30}
-              />
+              <Wordmark variant="light" height={30} />
             </a>
             <p className="font-display font-semibold text-white/55 text-[15px] tracking-[.01em]">
               {site.tagline}

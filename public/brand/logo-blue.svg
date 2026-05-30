@@ -1,7 +1,7 @@
-<!-- Evntiqa wordmark — used on light backgrounds (header after scroll, mobile menu).
-     Keep the same filename to swap with official artwork. -->
+<!-- Evntiqa wordmark — brand-blue variant (use on neutral light surfaces where
+     extra brand presence is desired). -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60">
-  <text x="0" y="44" fill="#0b1426"
+  <text x="0" y="44" fill="#1f51fe"
     font-family="'Hanken Grotesk', system-ui, -apple-system, sans-serif"
     font-weight="400" font-size="52" letter-spacing="-1.5">evntiqa</text>
 </svg>

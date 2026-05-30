@@ -1,0 +1,8 @@
+<!-- Apple touch icon — 180×180. Renders on iOS home-screen + iPadOS Safari. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect width="180" height="180" rx="40" fill="#1f51fe"/>
+  <text x="90" y="128"
+    font-family="'Hanken Grotesk', system-ui, -apple-system, sans-serif"
+    font-weight="700" font-size="124" letter-spacing="-5"
+    fill="#ffffff" text-anchor="middle">e</text>
+</svg>

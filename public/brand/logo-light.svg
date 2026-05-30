@@ -1,5 +1,7 @@
-<!-- PLACEHOLDER: replace with the official Evntiqa wordmark.
-     Used on dark backgrounds (header over hero, footer). -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40">
-  <text x="0" y="28" font-family="'Schibsted Grotesk', system-ui, sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5" fill="#ffffff">Evntiqa</text>
+<!-- Evntiqa wordmark — used on dark backgrounds (header over hero, footer, preloader).
+     Keep the same filename to swap with official artwork. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60">
+  <text x="0" y="44" fill="#ffffff"
+    font-family="'Hanken Grotesk', system-ui, -apple-system, sans-serif"
+    font-weight="400" font-size="52" letter-spacing="-1.5">evntiqa</text>
 </svg>

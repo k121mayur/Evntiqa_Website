@@ -34,7 +34,10 @@
     />
     <meta name="twitter:image" content="https://evntiqa.com/og-image.png" />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Favicons. The ?v=2 cache-busts older variants browsers may have cached. -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.svg?v=2" />
+    <link rel="mask-icon" href="/favicon.svg?v=2" color="#1f51fe" />
 
     <!-- Fonts: Hanken Grotesk (body) + Schibsted Grotesk (display) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,8 +60,9 @@
       }
     </script>
 
-    <!-- Critical boot styles: navy first paint + spinner so there is no white flash
-         before React mounts (the hero and footer are dark, so navy is the right base). -->
+    <!-- Critical boot styles: navy first paint + a single subtle ring so there is no
+         jarring transition between this pre-React fallback and the React preloader.
+         Both render on the same navy backdrop. -->
     <style>
       html,
       body {
@@ -77,16 +81,21 @@
         z-index: 9999;
       }
       .boot i {
-        width: 46px;
-        height: 46px;
+        width: 56px;
+        height: 56px;
         border-radius: 50%;
-        border: 3px solid rgba(255, 255, 255, 0.16);
+        border: 2px solid rgba(80, 118, 255, 0.18);
         border-top-color: #5076ff;
-        animation: bootspin 0.8s linear infinite;
+        animation: bootspin 1s cubic-bezier(0.6, 0, 0.4, 1) infinite;
       }
       @keyframes bootspin {
         to {
           transform: rotate(360deg);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .boot i {
+          animation: none;
         }
       }
     </style>

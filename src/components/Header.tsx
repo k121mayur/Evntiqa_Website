@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { site } from '../data/site';
 import { useStickyHeader, useScrollLock } from '../hooks';
+import { Wordmark } from './Wordmark';
 
 export function Header() {
   const scrolled = useStickyHeader(24);
@@ -96,18 +97,9 @@ export function Header() {
   );
 }
 
-/** Evntiqa wordmark — switches artwork to keep contrast on light vs dark backgrounds.
- *  Swap files at /public/brand/logo-light.svg and /public/brand/logo-dark.svg. */
+/** Evntiqa wordmark — switches artwork to keep contrast on light vs dark backgrounds. */
 function BrandLogo({ dark }: { dark: boolean }) {
-  return (
-    <img
-      src={dark ? '/brand/logo-dark.svg' : '/brand/logo-light.svg'}
-      alt="Evntiqa"
-      className="h-[26px] w-auto block"
-      width={130}
-      height={26}
-    />
-  );
+  return <Wordmark variant={dark ? 'dark' : 'light'} height={26} label="Evntiqa home" />;
 }
 
 /** Animated hamburger / close icon. */

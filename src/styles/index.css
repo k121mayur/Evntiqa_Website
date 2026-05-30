@@ -384,6 +384,11 @@
 
 /* ============================================================
    PRELOADER / BRANDED INTRO
+   - Three brand-blue radar rings expand & fade from the wordmark
+   - The wordmark fades + scales in
+   - An animated brand-blue underline sweeps left-to-right beneath it
+   - Tagline fades up last
+   - Whole layer fades + scales out on dismiss
    ============================================================ */
 .preloader {
   position: fixed;
@@ -400,6 +405,12 @@
   visibility: hidden;
   pointer-events: none;
 }
+.preloader.done .pl-inner {
+  transform: scale(1.04);
+  transition: transform 0.7s var(--ease);
+}
+
+/* Soft radial backdrop glow */
 .pl-bg {
   position: absolute;
   inset: 0;
@@ -408,26 +419,96 @@
 .pl-bg::before {
   content: "";
   position: absolute;
-  width: 900px;
-  height: 900px;
+  width: 1100px;
+  height: 1100px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background: radial-gradient(circle, rgba(80, 118, 255, 0.22) 0%, rgba(80, 118, 255, 0) 62%);
 }
+
+/* Faint masked grid for premium texture */
+.pl-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.4;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 30%, transparent 80%);
+  mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 30%, transparent 80%);
+}
+
 .pl-inner {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 26px;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 520px;
+  padding: 0 24px;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.7s var(--ease);
 }
-.pl-logo {
-  height: 42px;
-  width: auto;
+
+/* Radar rings — three concentric rings that expand and fade outward */
+.pl-rings {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  z-index: 0;
+}
+.pl-rings span {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(80, 118, 255, 0.55);
   opacity: 0;
-  transform: translateY(10px) scale(0.98);
-  animation: plLogoIn 0.9s var(--ease) 0.15s forwards;
+  animation: plRing 2.6s var(--ease) infinite;
+}
+.pl-rings span:nth-child(2) {
+  animation-delay: 0.65s;
+}
+.pl-rings span:nth-child(3) {
+  animation-delay: 1.3s;
+}
+@keyframes plRing {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+    border-color: rgba(80, 118, 255, 0.7);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(6);
+    opacity: 0;
+    border-color: rgba(31, 81, 254, 0);
+  }
+}
+
+/* Wordmark — fades up + scales in. SVG height responds to viewport size. */
+.pl-logo {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(12px) scale(0.96);
+  animation: plLogoIn 1s var(--ease) 0.2s forwards;
+  max-width: 100%;
+}
+.pl-logo svg {
+  /* Override the inline height from <Wordmark> so it scales with the viewport. */
+  height: clamp(28px, 8.5vw, 44px) !important;
+  width: auto;
+  max-width: 100%;
 }
 @keyframes plLogoIn {
   to {
@@ -435,30 +516,33 @@
     transform: none;
   }
 }
-.pl-bar {
-  width: 180px;
-  height: 3px;
-  border-radius: 3px;
-  background: rgba(255, 255, 255, 0.14);
+
+/* Animated underline that sweeps from left to right under the wordmark */
+.pl-underline {
+  position: relative;
+  z-index: 1;
+  width: min(220px, 60vw);
+  height: 2px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.08);
   overflow: hidden;
   opacity: 0;
   animation: plFade 0.5s var(--ease) 0.5s forwards;
 }
-.pl-bar span {
-  display: block;
-  height: 100%;
-  width: 40%;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--blue-bright), #fff);
-  transform: translateX(-120%);
-  animation: plSweep 1.15s var(--ease) 0.6s infinite;
+.pl-underline::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, var(--blue-bright) 50%, transparent 100%);
+  transform: translateX(-100%);
+  animation: plSweep 1.6s var(--ease) 0.6s infinite;
 }
 @keyframes plSweep {
   0% {
-    transform: translateX(-120%);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(330%);
+    transform: translateX(100%);
   }
 }
 @keyframes plFade {
@@ -466,15 +550,45 @@
     opacity: 1;
   }
 }
+
+/* Tagline — fades up last with a subtle letter-spacing settle.
+   On narrow phones the tagline wraps to two lines instead of pushing the
+   container wider than the viewport (which would visually shift the centred
+   wordmark off-axis). */
 .pl-tag {
+  position: relative;
+  z-index: 1;
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: clamp(9.5px, 2.4vw, 11.5px);
   font-weight: 600;
-  letter-spacing: 0.22em;
+  letter-spacing: clamp(0.16em, 0.6vw, 0.32em);
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 100%;
+  line-height: 1.55;
+  white-space: normal;
+  word-spacing: 0.05em;
   opacity: 0;
-  animation: plFade 0.6s var(--ease) 0.7s forwards;
+  transform: translateY(6px);
+  animation: plTagIn 0.8s var(--ease) 0.85s forwards;
+}
+@keyframes plTagIn {
+  to {
+    opacity: 1;
+    transform: none;
+    letter-spacing: clamp(0.12em, 0.5vw, 0.22em);
+  }
+}
+
+/* Smaller phones — pull the rings closer so they don't dwarf the wordmark */
+@media (max-width: 480px) {
+  .pl-rings span {
+    width: 60px;
+    height: 60px;
+  }
+  .pl-inner {
+    gap: 20px;
+  }
 }
 
 /* ============================================================
