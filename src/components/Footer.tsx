@@ -47,14 +47,6 @@ export function Footer() {
             >
               {site.email}
             </a>
-            <a
-              href={site.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-[15px] text-white/65 mb-3 transition-colors duration-200 ease-brand hover:text-brand-bright"
-            >
-              LinkedIn
-            </a>
             <div className="flex gap-2.5 mt-1.5">
               <a
                 href={site.linkedin}

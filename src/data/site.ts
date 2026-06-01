@@ -31,7 +31,7 @@ export interface Card {
 export const site = {
   name: 'Evntiqa',
   tagline: 'Content. Conversations. Engagement.',
-  email: 'jackie@evntiqa.com',
+  email: 'hello@evntiqa.com',
   linkedin: 'https://www.linkedin.com/company/evntiqa',
 
   /** Primary call-to-action used across the site.
@@ -39,14 +39,14 @@ export const site = {
    *  to e.g. 'https://calendly.com/your-handle/discovery'. */
   cta: {
     label: 'Book a Discovery Call',
-    href: 'mailto:jackie@evntiqa.com?subject=Discovery%20Call%20Request',
+    href: 'mailto:hello@evntiqa.com?subject=Discovery%20Call%20Request',
   },
 
   /** Floating WhatsApp button.
    *  Replace `number` with the real one — digits only, including
    *  country code, NO "+" and NO spaces.  e.g. '14155551234'. */
   whatsapp: {
-    number: '10000000000', // <-- REPLACE WITH REAL NUMBER
+    number: '918010596600', // 
     message: "Hi Evntiqa, I'd like to book a discovery call.",
   },
 
