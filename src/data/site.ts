@@ -61,19 +61,19 @@ export const site = {
 
 /* ------------------------------ HERO ------------------------------ */
 export const hero = {
-  tag: 'B2B Engagement Media · Account-Based Marketing',
+  tag: 'B2B Engagement Media',
   titleLead: 'ABM-Powered ',
-  titleHighlight: 'Executive Roundtables',
+  titleHighlight: 'Virtual Executive Roundtables',
   sub: 'We help B2B technology companies engage target accounts through executive-led conversations, personalized distribution, and intent-driven engagement campaigns.',
   support:
-    'We start with the target accounts and build the executive conversation around their priorities — not the other way around.',
+    'Executive-led virtual programs designed to engage CIOs, CTOs, CISOs, CFOs, CMOs, CHROs, CROs, and buying committees across APAC, ANZ, the Middle East, and North America.',
 } as const;
 
 /* ------------------------------ TRUST ----------------------------- */
 export const trust = {
   eyebrow: 'Content. Conversations. Engagement.',
   heading: 'Executive dialogues are only valuable when they reach the right audience.',
-  body: 'At Evntiqa, we combine executive roundtables, account-based marketing, and personalized distribution to help B2B technology companies engage high-value target accounts and buying committees.',
+  body: 'At Evntiqa, we combine virtual executive roundtables, account-based marketing, and personalized distribution to help B2B technology companies engage high-value target accounts and buying committees.',
   nos: ['No spray-and-pray campaigns.', 'No generic webinars.', 'No vanity registrations.'],
   yes: 'Just meaningful executive engagement.',
 } as const;
@@ -90,7 +90,7 @@ export const how = {
     },
     {
       icon: 'users',
-      title: 'Executive Roundtable Creation',
+      title: 'Virtual Roundtable Creation',
       body: 'We develop and produce executive-led virtual roundtables featuring industry leaders and subject matter experts around topics relevant to your audience.',
     },
     {
@@ -101,7 +101,7 @@ export const how = {
     {
       icon: 'chart',
       title: 'Engagement Insights',
-      body: 'We track account-level engagement, positive interactions, content consumption, and audience interest signals.',
+      body: 'We track account-level engagement, positive interactions, content consumption, and audience intent signals.',
     },
   ] satisfies Card[],
 } as const;
@@ -152,7 +152,7 @@ export const who = {
   cta: 'Engage buying committees through executive-led content.',
   cards: [
     {
-      icon: 'equalizer',
+      icon: 'chart',
       title: 'CMOs & Marketing Leaders',
       body: 'Build executive thought leadership, strengthen brand positioning, and engage strategic target accounts through peer-led executive conversations.',
     },
