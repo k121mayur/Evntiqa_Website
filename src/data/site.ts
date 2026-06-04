@@ -63,7 +63,7 @@ export const site = {
 export const hero = {
   tag: 'B2B Engagement Media',
   titleLead: 'ABM-Powered ',
-  titleHighlight: 'Virtual Executive Roundtables',
+  titleHighlight: 'Virtual Executive Circles',
   sub: 'We help B2B technology companies engage target accounts through executive-led conversations, personalized distribution, and intent-driven engagement campaigns.',
   support:
     'Executive-led virtual programs designed to engage CIOs, CTOs, CISOs, CFOs, CMOs, CHROs, CROs, and buying committees across APAC, ANZ, the Middle East, and North America.',
@@ -73,7 +73,7 @@ export const hero = {
 export const trust = {
   eyebrow: 'Content. Conversations. Engagement.',
   heading: 'Executive dialogues are only valuable when they reach the right audience.',
-  body: 'At Evntiqa, we combine virtual executive roundtables, account-based marketing, and personalized distribution to help B2B technology companies engage high-value target accounts and buying committees.',
+  body: 'At Evntiqa, we combine virtual executive Circles, account-based marketing, and personalized distribution to help B2B technology companies engage high-value target accounts and buying committees.',
   nos: ['No spray-and-pray campaigns.', 'No generic webinars.', 'No vanity registrations.'],
   yes: 'Just meaningful executive engagement.',
 } as const;
@@ -91,7 +91,7 @@ export const how = {
     {
       icon: 'users',
       title: 'Virtual Roundtable Creation',
-      body: 'We develop and produce executive-led virtual roundtables featuring industry leaders and subject matter experts around topics relevant to your audience.',
+      body: 'We develop and produce executive-led virtual Circles featuring industry leaders and subject matter experts around topics relevant to your audience.',
     },
     {
       icon: 'send',
@@ -260,5 +260,5 @@ export const footer = {
     { label: 'About', href: '#about' },
   ] satisfies NavLink[],
   bottomLeft: '© 2026 Evntiqa. All Rights Reserved.',
-  bottomRight: 'ABM-powered executive roundtables for B2B technology brands.',
+  bottomRight: 'ABM-powered executive Circles for B2B technology brands.',
 } as const;

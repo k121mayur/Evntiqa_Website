@@ -1,6 +1,6 @@
 # Evntiqa — Marketing Site
 
-ABM-powered executive roundtables for B2B technology brands.
+ABM-powered executive Circles for B2B technology brands.
 A clean, fast, accessible single-page marketing site built with **React 18 + Vite + TypeScript + Tailwind CSS**.
 
 ---
@@ -71,19 +71,19 @@ The page is composed in [src/App.tsx](src/App.tsx) by importing each section com
 
 Strings are clearly grouped:
 
-| Block            | What it controls                                              |
-| ---------------- | ------------------------------------------------------------- |
-| `site`           | Brand name, tagline, email, LinkedIn, primary CTA, nav links  |
-| `site.whatsapp`  | The floating WhatsApp button (number + pre-filled message)    |
-| `hero`           | Hero tag chip, headline, sub-text, support quote              |
-| `trust`          | "Executive dialogues are only valuable…" section              |
-| `how`            | The 4 step cards                                              |
-| `why`            | The 6 "Why B2B Marketers Work with Us" cards                  |
-| `who`            | The 8 audience cards on the navy section                      |
-| `clients`        | The brand wall lead, sub, and the list of client logo files   |
-| `about`          | The eyebrow, heading, three paragraphs, three stat tiles      |
-| `finalCta`       | The closing heading + body                                    |
-| `footer`         | Footer link list and the two bottom-row strings               |
+| Block           | What it controls                                             |
+| --------------- | ------------------------------------------------------------ |
+| `site`          | Brand name, tagline, email, LinkedIn, primary CTA, nav links |
+| `site.whatsapp` | The floating WhatsApp button (number + pre-filled message)   |
+| `hero`          | Hero tag chip, headline, sub-text, support quote             |
+| `trust`         | "Executive dialogues are only valuable…" section             |
+| `how`           | The 4 step cards                                             |
+| `why`           | The 6 "Why B2B Marketers Work with Us" cards                 |
+| `who`           | The 8 audience cards on the navy section                     |
+| `clients`       | The brand wall lead, sub, and the list of client logo files  |
+| `about`         | The eyebrow, heading, three paragraphs, three stat tiles     |
+| `finalCta`      | The closing heading + body                                   |
+| `footer`        | Footer link list and the two bottom-row strings              |
 
 Save the file → Vite hot-reloads → done.
 
@@ -125,14 +125,14 @@ Recommended specs: SVG preferred, full-colour brand artwork, ~200×60 viewBox. E
 
 The brand palette and type scale live in [tailwind.config.js](tailwind.config.js). The dominant colour is **Neon Blue `#1F51FE`**, with white as the canvas, a deep navy `#0A1736` for the hero / Who-We-Help / Final-CTA / Footer, and near-blacks for text — kept sparing per the brief.
 
-| Token             | Value       | Use                                                        |
-| ----------------- | ----------- | ---------------------------------------------------------- |
-| `brand`           | `#1F51FE`   | Primary buttons, links, eyebrows, icon outlines            |
-| `brand-bright`    | `#5076FF`   | Hero headline accent, hero tag dot, footer link hover      |
-| `brand-50/100`    | tints       | Card icon chips, hairlines, dashed connector line          |
-| `navy`            | `#0A1736`   | Hero / Who / Final / Preloader background                  |
-| `navy-deep`       | `#06102B`   | Footer background                                          |
-| `ink`/`ink-2`/`ink-3` | dark blues | Primary, secondary, tertiary text                       |
+| Token                 | Value      | Use                                                   |
+| --------------------- | ---------- | ----------------------------------------------------- |
+| `brand`               | `#1F51FE`  | Primary buttons, links, eyebrows, icon outlines       |
+| `brand-bright`        | `#5076FF`  | Hero headline accent, hero tag dot, footer link hover |
+| `brand-50/100`        | tints      | Card icon chips, hairlines, dashed connector line     |
+| `navy`                | `#0A1736`  | Hero / Who / Final / Preloader background             |
+| `navy-deep`           | `#06102B`  | Footer background                                     |
+| `ink`/`ink-2`/`ink-3` | dark blues | Primary, secondary, tertiary text                     |
 
 Fonts (Google Fonts): **Schibsted Grotesk** for display headings, **Hanken Grotesk** for body — both loaded from the CDN with `display=swap` to avoid layout flash.
 
@@ -186,12 +186,12 @@ For all three: set the production domain to `evntiqa.com` and update the `<link 
 
 ## Scripts reference
 
-| Command            | What it does                                              |
-| ------------------ | --------------------------------------------------------- |
-| `npm run dev`      | Vite dev server with hot-module reload                    |
-| `npm run typecheck`| TypeScript only (no emit)                                 |
-| `npm run build`    | Type-check + production build into `dist/`                |
-| `npm run preview`  | Serve the production build locally on port 4173          |
+| Command             | What it does                                    |
+| ------------------- | ----------------------------------------------- |
+| `npm run dev`       | Vite dev server with hot-module reload          |
+| `npm run typecheck` | TypeScript only (no emit)                       |
+| `npm run build`     | Type-check + production build into `dist/`      |
+| `npm run preview`   | Serve the production build locally on port 4173 |
 
 ---
 

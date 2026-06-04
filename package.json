@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Evntiqa — ABM-powered executive roundtables for B2B technology brands. Single-page marketing site (React + Vite + Tailwind).",
+  "description": "Evntiqa — ABM-powered executive Circles for B2B technology brands. Single-page marketing site (React + Vite + Tailwind).",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
