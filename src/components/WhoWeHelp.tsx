@@ -25,12 +25,6 @@ export function WhoWeHelp() {
         </div>
 
         <Reveal className="relative z-[1] mt-[clamp(44px,6vw,64px)] flex items-center justify-center gap-[22px] flex-wrap text-center">
-          <p
-            className="font-display font-bold text-white tracking-[-.01em]"
-            style={{ fontSize: 'clamp(20px,2.4vw,26px)' }}
-          >
-            {who.cta}
-          </p>
           <a href={site.cta.href} className="btn btn-light">
             {site.cta.label}
             <span className="arr" aria-hidden="true">→</span>
