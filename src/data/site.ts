@@ -30,7 +30,7 @@ export interface Card {
 /* ----------------------------- GLOBAL ----------------------------- */
 export const site = {
   name: 'Evntiqa',
-  tagline: 'Content. Conversations. Engagement.',
+  tagline: 'Global Executive Engagement Partner',
   email: 'hello@evntiqa.com',
   linkedin: 'https://www.linkedin.com/company/evntiqa',
 
@@ -38,7 +38,7 @@ export const site = {
    *  To use a booking tool instead of email, change `cta.href`
    *  to e.g. 'https://calendly.com/your-handle/discovery'. */
   cta: {
-    label: 'Book a Discovery Call',
+    label: 'Talk to an Executive Engagement Advisor',
     href: 'mailto:hello@evntiqa.com?subject=Discovery%20Call%20Request',
   },
 
@@ -51,7 +51,7 @@ export const site = {
   },
 
   nav: [
-    { label: 'How It Works', href: '#how' },
+    { label: 'What We Deliver', href: '#how' },
     { label: 'Why Evntiqa', href: '#why' },
     { label: 'Who We Help', href: '#who' },
     { label: 'Clients', href: '#clients' },
@@ -61,47 +61,47 @@ export const site = {
 
 /* ------------------------------ HERO ------------------------------ */
 export const hero = {
-  tag: 'B2B Engagement Media',
-  titleLead: 'ABM-Powered ',
-  titleHighlight: 'Virtual Executive Circles',
-  sub: 'We help B2B technology companies engage target accounts through executive-led conversations, personalized distribution, and intent-driven engagement campaigns.',
+  tag: 'Built Global Enterprise Marketers',
+  titleLead: 'Executive Engagement. ',
+  titleHighlight: 'Solved.',
+  sub: 'Through curated, invitation-only executive experiences that connect you with executive buying committees, strengthen target account relationships, and accelerate pipeline.',
   support:
-    'Executive-led virtual programs designed to engage CIOs, CTOs, CISOs, CFOs, CMOs, CHROs, CROs, and buying committees across APAC, ANZ, the Middle East, and North America.',
+    'Connecting enterprise technology companies with senior decision makers across APAC, India, the Middle East, Africa, ANZ, and the United States.',
 } as const;
 
 /* ------------------------------ TRUST ----------------------------- */
 export const trust = {
-  eyebrow: 'Content. Conversations. Engagement.',
-  heading: 'Executive dialogues are only valuable when they reach the right audience.',
-  body: 'At Evntiqa, we combine virtual executive Circles, account-based marketing, and personalized distribution to help B2B technology companies engage high-value target accounts and buying committees.',
-  nos: ['No spray-and-pray campaigns.', 'No generic webinars.', 'No vanity registrations.'],
-  yes: 'Just meaningful executive engagement.',
+  eyebrow: 'Meaningful Executive Engagement. Measurable Business Outcomes.',
+  heading: 'Enterprise pipeline is built on executive relationships, not one-off campaigns.',
+  body: 'Evntiqa helps enterprise technology marketing teams create meaningful executive engagement through curated, invitation-only executive experiences that connect enterprise technology companies with the decision-makers who influence strategic buying decisions.',
+  nos: ['No generic event audiences.', 'No wasted event budgets.', 'No irrelevant conversations.'],
+  yes: 'Better Access to the Right Decision-Makers.',
 } as const;
 
 /* --------------------------- HOW IT WORKS ------------------------- */
 export const how = {
-  eyebrow: 'How Evntiqa Works',
-  heading: 'From target accounts to measurable engagement',
+  eyebrow: 'What We Deliver',
+  heading: 'Everything You Need to Engage Enterprise Decision-Makers',
   steps: [
     {
       icon: 'searchPlus',
-      title: 'Audience Intelligence',
-      body: 'We identify and research your target accounts, buying committees, and executive personas to understand what matters most to them.',
+      title: 'Executive Leadership Series',
+      body: 'Build long-term executive engagement through curated leadership series that connect global enterprise technology companies with senior business and technology decision-makers around strategic industry conversations.',
     },
     {
       icon: 'users',
-      title: 'Virtual Roundtable Creation',
-      body: 'We develop and produce executive-led virtual Circles featuring industry leaders and subject matter experts around topics relevant to your audience.',
+      title: 'Done-for-you Executive Events',
+      body: 'End-to-end planning and delivery of premium, invitation-only executive events designed to strengthen target account engagement and create meaningful access to enterprise decision-makers.',
     },
     {
       icon: 'send',
-      title: 'Personalized Distribution',
-      body: 'Using ABM-driven outreach, we distribute the content directly to target accounts through personalized engagement campaigns.',
+      title: 'Digital Executive Engagement',
+      body: 'Extend executive engagement beyond the event with personalized digital experiences that keep target accounts engaged throughout long enterprise buying journeys.',
     },
     {
       icon: 'chart',
-      title: 'Engagement Insights',
-      body: 'We track account-level engagement, positive interactions, content consumption, and audience intent signals.',
+      title: 'Executive Audience Development',
+      body: 'Identify, qualify, and engage the right executive audiences for every program through strategic audience research, invitation management, and executive outreach designed for enterprise technology companies.',
     },
   ] satisfies Card[],
 } as const;
@@ -109,37 +109,38 @@ export const how = {
 /* ---------------------------- WHY EVNTIQA ------------------------- */
 export const why = {
   eyebrow: 'Why Evntiqa',
-  heading: 'Why B2B Marketers Work with Us',
+  heading: 'Why Enterprise Marketers Choose Evntiqa',
+  sub: 'Built for Enterprise Marketing Teams.',
   cards: [
     {
       icon: 'search',
-      title: 'Audience Intelligence',
-      body: 'Every engagement starts with account research, buying committee mapping, and executive audience intelligence.',
+      title: 'Curated Executive Audiences',
+      body: 'Every executive experience is carefully curated to bring together the right decision-makers, not just a larger audience.',
     },
     {
       icon: 'target',
-      title: 'Audience First',
-      body: 'We start with the target accounts and build the conversation around their priorities.',
+      title: 'Invitation-Only Experiences',
+      body: 'Private executive experiences designed to encourage meaningful peer discussions in a trusted environment.',
     },
     {
       icon: 'chat',
-      title: 'Executive-Led Content',
-      body: 'Peer-driven conversations featuring industry leaders and practitioners.',
+      title: 'Strategic Account Focus',
+      body: 'Every program is aligned with your priority accounts, buying committees, and enterprise marketing objectives.',
     },
     {
       icon: 'sun',
-      title: 'Hyper-Personalized Distribution',
-      body: 'Content delivered through personalized outreach instead of mass promotion.',
+      title: 'End-to-End Delivery',
+      body: 'From audience development and executive invitations to event execution and post-event engagement, we manage every detail.',
     },
     {
       icon: 'chart',
-      title: 'Intent-Driven Engagement',
-      body: 'Designed to generate meaningful engagement signals rather than vanity metrics.',
+      title: 'Global Executive Reach',
+      body: 'Engage senior business and technology leaders across APAC, India, the Middle East, Africa, ANZ, and the United States.',
     },
     {
       icon: 'clock',
-      title: 'On-Demand Content Strategy',
-      body: 'Executive content hosted and distributed for long-term engagement beyond the live event.',
+      title: 'Measurable Marketing Impact',
+      body: 'Designed to strengthen target account engagement, improve access to decision-makers, and support pipeline growth.',
     },
   ] satisfies Card[],
 } as const;
@@ -147,49 +148,48 @@ export const why = {
 /* ---------------------------- WHO WE HELP ------------------------- */
 export const who = {
   eyebrow: 'Who We Help',
-  heading: 'Built for Modern B2B Marketing Teams',
-  body: 'Evntiqa helps B2B technology companies engage target accounts through executive-led content, personalized distribution, and ABM-powered engagement programs.',
-  cta: 'Engage buying committees through executive-led content.',
+  heading: 'Supporting Modern Enterprise Marketing',
+  body: 'Designed for enterprise marketing teams responsible for engaging strategic accounts, influencing buying committees, and accelerating the pipeline.',
   cards: [
     {
       icon: 'chart',
-      title: 'CMOs & Marketing Leaders',
-      body: 'Build executive thought leadership, strengthen brand positioning, and engage strategic target accounts through peer-led executive conversations.',
+      title: 'Field Marketing',
+      body: 'Create meaningful engagement with strategic accounts through premium executive experiences that support regional marketing goals and pipeline growth.',
     },
     {
       icon: 'globe',
-      title: 'Demand Generation Teams',
-      body: 'Extend the reach of your content through personalized distribution campaigns designed to drive meaningful account engagement and buying committee interaction.',
+      title: 'Event Marketing',
+      body: 'Deliver invitation-only executive events that create lasting engagement before, during, and long after the event.',
     },
     {
       icon: 'target',
-      title: 'Account-Based Marketing Teams',
-      body: 'Engage target accounts with executive-led content built around audience priorities, industry challenges, and buying committee interests.',
+      title: 'Marketing Leadership',
+      body: 'Strengthen executive engagement strategies that support brand positioning, strategic growth, and measurable marketing impact.',
     },
     {
       icon: 'pin',
-      title: 'Field Marketing Leaders',
-      body: 'Support regional and strategic marketing initiatives with executive content designed to create engagement before, during, and after the event.',
+      title: 'Account-Based Marketing (ABM)',
+      body: 'Support named account strategies with executive experiences aligned to buying committees and strategic account priorities.',
     },
     {
       icon: 'briefcase',
-      title: 'Content Marketing Teams',
-      body: 'Transform executive insights into high-value content assets that can be repurposed across multiple campaigns, channels, and audiences.',
+      title: 'Demand Generation',
+      body: 'Complement demand generation programs with executive experiences that engage high-value accounts and contribute to pipeline growth.',
     },
     {
       icon: 'layers',
-      title: 'Product Marketing Teams',
-      body: 'Position your solutions within relevant industry conversations and connect with decision-makers through executive-led discussions.',
+      title: 'Product Marketing',
+      body: 'Position your solutions within executive-level industry discussions that build credibility with enterprise decision-makers.',
     },
     {
       icon: 'cpu',
       title: 'B2B SaaS Companies',
-      body: 'Accelerate account engagement and executive visibility through personalized content and distribution programs designed around your ideal customer profile.',
+      body: 'Scale executive engagement programs that strengthen market visibility, accelerate enterprise opportunities, and support long sales cycles.',
     },
     {
       icon: 'building',
-      title: 'Enterprise Technology Brands',
-      body: 'Engage CIOs, CTOs, CISOs, CMOs, and buying committees through executive conversations built around the challenges and priorities that matter most.',
+      title: 'Enterprise Technology Companies',
+      body: 'Partner with Evntiqa to engage CIOs, CTOs, CISOs, CDAIOs, and other senior business and technology leaders through premium executive experiences designed for enterprise growth.',
     },
   ] satisfies Card[],
 } as const;
@@ -224,7 +224,7 @@ export interface AboutParagraph {
 }
 
 export const about = {
-  eyebrow: 'About Evntiqa',
+  eyebrow: 'Your Global Executive Engagement Partner',
   heading: 'A B2B engagement media company.',
   stats: [
     { big: 'ABM', label: 'Account-based by design' },
@@ -233,32 +233,32 @@ export const about = {
   ],
   body: [
     {
-      lead: 'Evntiqa is a B2B engagement media company',
-      rest: ' focused on helping technology brands build awareness, engagement, and demand within their target accounts.',
+      lead: 'Evntiqa partners with enterprise technology companies',
+      rest: ' to help them build trusted relationships with senior business and technology leaders through curated executive experiences and digital executive engagement.',
     },
     {
-      rest: 'We combine audience intelligence, executive content, account-based marketing, intent-driven engagement, and personalized distribution to help marketers connect with buying committees and decision-makers across the customer journey.',
+      rest: 'We work with Field Marketing, Event Marketing, and Marketing Leadership teams to engage executive buying committees, strengthen strategic account engagement, and support long enterprise buying journeys.',
     },
     {
-      rest: 'Our programs are designed to transform content into engagement, engagement into intent, and intent into meaningful pipeline opportunities through executive-led conversations, content experiences, and demand generation initiatives.',
+      rest: 'From executive leadership series and invitation-only executive events to digital executive engagement, every program is designed to help enterprise marketers create meaningful connections with the decision-makers who influence business outcomes.',
     },
   ] satisfies AboutParagraph[],
 } as const;
 
 /* ---------------------------- FINAL CTA --------------------------- */
 export const finalCta = {
-  heading: 'Turn Executive Conversations into Account Engagement',
-  body: 'Engage buying committees through executive-led content, personalized distribution, and ABM-powered engagement campaigns.',
+  heading: 'Ready to Solve Executive Engagement?',
+  body: 'Let\u2019s create an executive engagement strategy that helps you reach the right decision-makers, strengthen strategic accounts, and accelerate the pipeline.',
 } as const;
 
 /* ------------------------------ FOOTER ---------------------------- */
 export const footer = {
   companyLinks: [
-    { label: 'How It Works', href: '#how' },
+    { label: 'What We Deliver', href: '#how' },
     { label: 'Why Evntiqa', href: '#why' },
     { label: 'Who We Help', href: '#who' },
     { label: 'About', href: '#about' },
   ] satisfies NavLink[],
   bottomLeft: '© 2026 Evntiqa. All Rights Reserved.',
-  bottomRight: 'ABM-powered executive Circles for B2B technology brands.',
+  bottomRight: 'The Global Executive Engagement Partner for Enterprise Technology Companies.',
 } as const;
