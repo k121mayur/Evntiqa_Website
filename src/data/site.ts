@@ -61,7 +61,7 @@ export const site = {
 
 /* ------------------------------ HERO ------------------------------ */
 export const hero = {
-  tag: 'Built Global Enterprise Marketers',
+  tag: 'Built For Global Enterprise Marketers',
   titleLead: 'Executive Engagement. ',
   titleHighlight: 'Solved.',
   sub: 'Through curated, invitation-only executive experiences that connect you with executive buying committees, strengthen target account relationships, and accelerate pipeline.',
@@ -148,7 +148,7 @@ export const why = {
 /* ---------------------------- WHO WE HELP ------------------------- */
 export const who = {
   eyebrow: 'Who We Help',
-  heading: 'Supporting Modern Enterprise Marketing',
+  heading: 'Supporting Modern Enterprise Marketers',
   body: 'Designed for enterprise marketing teams responsible for engaging strategic accounts, influencing buying committees, and accelerating the pipeline.',
   cards: [
     {
@@ -227,9 +227,9 @@ export const about = {
   eyebrow: 'Your Global Executive Engagement Partner',
   heading: 'A B2B engagement media company.',
   stats: [
-    { big: 'ABM', label: 'Account-based by design' },
-    { big: 'Exec', label: 'Peer-led conversations' },
-    { big: 'Intent', label: 'Signals over vanity' },
+    { big: 'Content', label: '' },
+    { big: 'Conversations', label: '' },
+    { big: 'Engagement', label: '' },
   ],
   body: [
     {
